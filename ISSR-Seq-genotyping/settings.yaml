@@ -1,0 +1,5 @@
+biosample_csv: "./test.csv"
+use_basespace: TRUE
+localFastqDir: "/quobyte/caburgegrp/Nick/RoachHitch/roach-hitch-pipelines/ISSR-Seq-genotyping/fastq"
+outdir: "./output"
+runID: "test"
