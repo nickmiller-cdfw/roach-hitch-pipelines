@@ -35,10 +35,7 @@ process FASTP {
         tuple val(id), path(read1), path(read2)
 
     output:
-    path("${id}.fastq.gz"), emit: "merged"
-    //path("${reads[0].toString().split("_")[0]}.merged.fastq.gz"), emit: "merged"
-    path("${id}.r1.fastq.gz"), emit: "r1"
-    path("${id}.r2.fastq.gz"), emit: "r2"
+    tuple val("${id}"), path("${id}.fastq.gz"), path("${id}.r1.fastq.gz"), path("${id}.r2.fastq.gz")
 
     shell:
     """

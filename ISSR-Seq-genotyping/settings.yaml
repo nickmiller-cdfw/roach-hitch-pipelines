@@ -1,5 +1,15 @@
+# Run settings
 biosample_csv: "./test.csv"
-use_basespace: TRUE
+use_basespace: false
 localFastqDir: "/quobyte/caburgegrp/Nick/RoachHitch/roach-hitch-pipelines/ISSR-Seq-genotyping/fastq"
 outdir: "./output"
 runID: "test"
+genome: "/quobyte/caburgegrp/Nick/RoachHitch/genomes/hitch_genome_v3.fasta"
+#genome: "/quobyte/caburgegrp/Nick/RoachHitch/genomes/roach_genome_v3.fasta"
+# Tool settings
+
+## fastQC
+fastQC_Opts: ""
+
+## fastp
+fastp_Opts: "-U --umi_loc per_read --umi_len 6 --trim_front1 25 -l 25 --low_complexity_filter"
