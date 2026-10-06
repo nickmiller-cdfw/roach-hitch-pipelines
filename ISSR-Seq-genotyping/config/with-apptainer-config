@@ -1,0 +1,17 @@
+singularity.enabled = true
+
+params {
+    max_memory                 = 128.GB
+    max_time                   = 72.h    
+  }
+
+
+
+process{
+    executor = 'slurm'
+    queue = "low"
+    queueSize = 20
+    errorStrategy = 'retry'
+    maxRetries = 5
+}
+
