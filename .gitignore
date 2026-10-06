@@ -1,0 +1,5 @@
+ISSR-Seq-genotyping/.nextflow*
+ISSR-Seq-genotyping/work
+ISSR-Seq-genotyping/fastq
+ISSR-Seq-genotyping/output
+ISSR-Seq-genotyping/test.csv
